@@ -31,7 +31,7 @@ var options = {
                 quote_keys: false,
                 space_colon: false,
                 inline_script: false,
-                mangle_exp: null
+                mangle_private: false
         },
         make: false,
         output: true            // stdout
@@ -182,8 +182,8 @@ out: while (args.length > 0) {
             case "--ascii":
                 options.codegen_options.ascii_only = true;
                 break;
-            case "--mangle-exp":
-                options.codegen_options.mangle_exp = new RegExp(args.shift());
+            case "--mangle-private":
+                options.codegen_options.mangle_private = true,
                 break;
             case "--make":
                 options.make = true;
