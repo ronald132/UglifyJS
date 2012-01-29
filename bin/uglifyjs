@@ -183,7 +183,7 @@ out: while (args.length > 0) {
                 options.codegen_options.ascii_only = true;
                 break;
             case "--mangle-private":
-                options.codegen_options.mangle_private = true,
+                options.codegen_options.mangle_private = true;
                 break;
             case "--make":
                 options.make = true;
