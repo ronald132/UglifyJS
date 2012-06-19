@@ -302,6 +302,10 @@ Supported options:
   - finally, try to merge assignments into that one =var= declaration, if
     possible.
 
+- =--mangel-private= -- when you want to obfuscate the names of variables 
+  starting with an "_" (underscore). This works for both names and properties,
+  so it can be used to mangle methods.
+
 *** API
 
 To use the library from JavaScript, you'd do the following (example for
